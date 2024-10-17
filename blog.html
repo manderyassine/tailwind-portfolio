@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="bg-gray-800 text-white py-4 sticky top-0 z-50 shadow-md">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 md:px-8"
+      >
+        <div class="text-3xl font-extrabold tracking-wide">
+          Yassine's Personal Blog
+        </div>
+        <nav>
+          <ul class="hidden md:flex space-x-8">
+            <li>
+              <a
+                href="#"
+                class="hover:text-indigo-400 transition-colors duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-indigo-400 transition-colors duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-indigo-400 transition-colors duration-300"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-indigo-400 transition-colors duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!--ffdgdfgdf-->
+          <nav
+            class="relative flex w-full flex-wrap items-center justify-between bg-neutral-100 py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 lg:py-4"
+            data-twe-navbar-ref
+          >
+            <div
+              class="flex w-full flex-wrap items-center justify-between px-3"
+            >
+              <!-- Icon dropdown -->
+              <div class="relative ms-4" data-twe-dropdown-ref>
+                <a
+                  class="me-4 flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-twe-dropdown-toggle-ref
+                  aria-expanded="false"
+                >
+                  <span
+                    class="relative inline-block h-[11px] w-4 overflow-hidden bg-gray-200 leading-[11px] decoration-inherit"
+                  >
+                    <span
+                      class="inline-block h-[11px] w-4 content-[''] [background-position:-36px_-26px_!important] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px]"
+                    ></span>
+                  </span>
+                  <span class="ps-1 [&>svg]:w-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul
+                  class="absolute left-auto right-0 z-[1000] float-left m-0 mt-1 hidden min-w-[10rem] list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
+                  aria-labelledby="navbarDropdown"
+                  data-twe-dropdown-menu-ref
+                >
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      href="#"
+                      data-twe-dropdown-item-ref
+                    >
+                      <span
+                        class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit"
+                      >
+                        <span
+                          class="inline-block h-[11px] w-4 content-[''] [background-position:-36px_-26px_!important] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px]"
+                        ></span>
+                      </span>
+                      <span class="me-4">English</span>
+                      <span
+                        class="inline-block text-success-600 dark:text-success-500 [&>svg]:h-3.5 [&>svg]:w-3.5"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2.5"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="my-2 border-neutral-100 dark:border-white/10" />
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      href="#"
+                      data-twe-dropdown-item-ref
+                    >
+                      <span
+                        class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit"
+                      >
+                        <span
+                          class="inline-block h-[11px] w-4 content-[''] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px] [background-position:-72px_-572px_!important]"
+                        ></span>
+                      </span>
+                      Polski</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      href="#"
+                      data-twe-dropdown-item-ref
+                    >
+                      <span
+                        class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit"
+                      >
+                        <span
+                          class="inline-block h-[11px] w-4 content-[''] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px] [background-position:0px_-1196px_!important]"
+                        ></span>
+                      </span>
+                      中文</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      href="#"
+                      data-twe-dropdown-item-ref
+                    >
+                      <span
+                        class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit"
+                      >
+                        <span
+                          class="inline-block h-[11px] w-4 content-[''] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px] [background-position:-36px_-910px_!important]"
+                        ></span>
+                      </span>
+                      日本語</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      href="#"
+                      data-twe-dropdown-item-ref
+                    >
+                      <span
+                        class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit"
+                      >
+                        <span
+                          class="inline-block h-[11px] w-4 content-[''] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px] [background-position:0px_-1430px_!important]"
+                        ></span>
+                      </span>
+                      Deutsch</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      href="#"
+                      data-twe-dropdown-item-ref
+                    >
+                      <span
+                        class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit"
+                      >
+                        <span
+                          class="inline-block h-[11px] w-4 content-[''] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px] [background-position:0px_-1976px_!important]"
+                        ></span>
+                      </span>
+                      Français</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      href="#"
+                      data-twe-dropdown-item-ref
+                    >
+                      <span
+                        class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit"
+                      >
+                        <span
+                          class="inline-block h-[11px] w-4 content-[''] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px] [background-position:-0px_-1742px_!important]"
+                        ></span>
+                      </span>
+                      Español</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      href="#"
+                      data-twe-dropdown-item-ref
+                    >
+                      <span
+                        class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit"
+                      >
+                        <span
+                          class="inline-block h-[11px] w-4 content-[''] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px] [background-position:-72px_-884px_!important]"
+                        ></span>
+                      </span>
+                      Русский</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      href="#"
+                      data-twe-dropdown-item-ref
+                    >
+                      <span
+                        class="relative me-2 inline-block h-[11px] w-4 overflow-hidden leading-[11px] decoration-inherit"
+                      >
+                        <span
+                          class="inline-block h-[11px] w-4 content-[''] [background:url(https://tecdn.b-cdn.net/img/svg/flags.png)_no-repeat_-108px_-1976px] [background-position:-72px_-702px_!important]"
+                        ></span>
+                      </span>
+                      Português</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!--tttttt-->
+          <div class="md:hidden">
+            <!-- Mobile menu button -->
+            <button class="text-white focus:outline-none">☰</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4 md:px-8">
+        <h2 class="text-4xl font-bold text-center mb-12">Featured Posts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          >
+            <img
+              src="bali.jpg"
+              alt="Post 1"
+              class="w-full h-64 object-cover rounded-t-lg"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3">Travel</h3>
+              <p class="text-gray-600 leading-relaxed">My travel to bali</p>
+              <a
+                href="#"
+                class="text-indigo-500 mt-4 inline-block hover:text-indigo-700 transition-colors"
+                >Read more &rarr;</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          >
+            <img
+              src="iphone.jpg"
+              alt="Post 1"
+              class="w-full h-64 object-cover rounded-t-lg"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3">Tech</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Unboxing the new Iphone
+              </p>
+              <a
+                href="#"
+                class="text-indigo-500 mt-4 inline-block hover:text-indigo-700 transition-colors"
+                >Read more &rarr;</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          >
+            <img
+              src="gym.jpg"
+              alt="Post 1"
+              class="w-full h-64 object-cover rounded-t-lg"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3">Lifestyle</h3>
+              <p class="text-gray-600 leading-relaxed">My daily gym routine</p>
+              <a
+                href="#"
+                class="text-indigo-500 mt-4 inline-block hover:text-indigo-700 transition-colors"
+                >Read more &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Explore by Categories</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="#"
+            class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all"
+            >Tech</a
+          >
+          <a
+            href="#"
+            class="inline-block bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all"
+            >Lifestyle</a
+          >
+          <a
+            href="#"
+            class="inline-block bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 transition-all"
+            >Travel</a
+          >
+          <a
+            href="#"
+            class="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full hover:bg-yellow-700 transition-all"
+            >Food</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--timeline-->
+    <ol class="border-s border-neutral-300 dark:border-neutral-500">
+      <!--First item-->
+      <li>
+        <div class="flex-start flex items-center pt-3">
+          <div
+            class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+          ></div>
+          <p class="text-sm text-neutral-500 dark:text-neutral-300">
+            05.07.2023
+          </p>
+        </div>
+        <div class="mb-6 ms-4 mt-2">
+          <h4 class="mb-1.5 text-xl font-semibold">My travel to bali</h4>
+          <p class="mb-3 text-neutral-500 dark:text-neutral-300">
+            Come with me to the best place in the world "bali" for my summer
+            vacancy
+          </p>
+        </div>
+      </li>
+
+      <!--Second item-->
+      <li>
+        <div class="flex-start flex items-center pt-2">
+          <div
+            class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+          ></div>
+          <p class="text-sm text-neutral-500 dark:text-neutral-300">
+            13.09.2024
+          </p>
+        </div>
+        <div class="mb-6 ms-4 mt-2">
+          <h4 class="mb-1.5 text-xl font-semibold">
+            Unboxing the new Iphone 16
+          </h4>
+          <p class="mb-3 text-neutral-500 dark:text-neutral-300">
+            Lets discover what the new apple's powerhouse is hiding for us this
+            year
+          </p>
+        </div>
+      </li>
+
+      <!--Third item-->
+      <li>
+        <div class="flex-start flex items-center pt-2">
+          <div
+            class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+          ></div>
+          <p class="text-sm text-neutral-500 dark:text-neutral-300">
+            16.10.2024
+          </p>
+        </div>
+        <div class="ms-4 mt-2 pb-5">
+          <h4 class="mb-1.5 text-xl font-semibold">My daily gym routine</h4>
+          <p class="mb-3 text-neutral-500 dark:text-neutral-300">
+            im taking you with me to the gym to show you my gym session
+          </p>
+        </div>
+      </li>
+    </ol>
+
+    <!--timeline-->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4 md:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">Recent Posts</h2>
+        <ul class="space-y-6">
+          <li
+            class="flex justify-between items-center border-b border-gray-200 pb-4"
+          >
+            <a
+              href="#"
+              class="text-xl font-semibold hover:text-indigo-500 transition-colors duration-300"
+              >My daily gym routine</a
+            >
+            <span class="text-gray-500">Oct 16, 2024</span>
+          </li>
+          <!-- Repeat for other recent posts -->
+        </ul>
+      </div>
+    </section>
+    <section class="bg-indigo-50 py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Stay Updated!</h2>
+        <p class="mb-6 text-gray-600">
+          Subscribe to our newsletter for the latest updates.
+        </p>
+        <form class="max-w-lg mx-auto flex flex-col md:flex-row gap-4">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="flex-1 px-6 py-3 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all"
+          />
+          <button
+            class="bg-indigo-500 text-white px-6 py-3 rounded-lg hover:bg-indigo-600 transition-all"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+    <!--Footer container-->
+    <footer
+      class="flex flex-col items-center bg-zinc-50 text-center text-surface dark:bg-neutral-700 dark:text-white"
+    >
+      <div class="container px-6 pt-6">
+        <!-- Social media icons container -->
+        <div class="mb-6 flex justify-center space-x-2">
+          <a
+            href="https://www.facebook.com/profile.php?id=61550754375231"
+            type="button"
+            class="rounded-full bg-[#3b5998] p-3 uppercase leading-normal text-white shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:text-white"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+          >
+            <span class="[&>svg]:h-5 [&>svg]:w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 320 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                <path
+                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <a
+            href="#!"
+            type="button"
+            class="rounded-full bg-[#55acee] p-3 uppercase leading-normal text-white shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:text-white"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+          >
+            <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 512 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                <path
+                  d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <a
+            href="#!"
+            type="button"
+            class="rounded-full bg-[#dd4b39] p-3 uppercase leading-normal text-white shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:text-white"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+          >
+            <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 488 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                <path
+                  d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <a
+            href="https://www.instagram.com/yassin_25456/"
+            type="button"
+            class="rounded-full bg-[#ac2bac] p-3 uppercase leading-normal text-white shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:text-white"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+          >
+            <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 448 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <a
+            href="#!"
+            type="button"
+            class="rounded-full bg-[#0082ca] p-3 uppercase leading-normal text-white shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:text-white"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+          >
+            <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 448 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                <path
+                  d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <a
+            href="https://github.com/manderyassine"
+            type="button"
+            class="rounded-full bg-[#333333] p-3 uppercase leading-normal text-white shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:text-white"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+          >
+            <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 496 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!--Copyright section-->
+      <div class="w-full bg-black/5 p-4 text-center">
+        © 2024 Copyright:
+        <a href="https://tw-elements.com/">YASSINE</a>
+      </div>
+    </footer>
+  </body>
+</html>
